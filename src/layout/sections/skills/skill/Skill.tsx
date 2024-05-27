@@ -1,8 +1,10 @@
 import styled from "styled-components";
-import { Incons } from "../icon/Icons";
+import { Incons } from "../../../../components/icon/Icons";
+import { H3TitleStyled } from "../../../../components/H3TitleStyled";
+import { H3DescriptionStyled } from "../../../../components/H3DescriptionStyled";
 
 type SkillPropsType = {
-    iconId: "ts" | "react" | "js" | "html" | "gitHub" | "git" | "css" | "styledComponents" | "styledComponents2";
+    iconId: "ts" | "react" | "js" | "html" | "gitHub" | "git" | "css" | "styledComponents";
     iconWidth?: string
     iconHeight?: string
     iconViewBox?: string
@@ -14,22 +16,26 @@ export function Skill(props: SkillPropsType) {
     return (
         <SkillWrapperStyled>
             <Incons iconId={props.iconId} width={props.iconWidth} height={props.iconHeight} viewBox={props.iconViewBox}/>
-            <h3>{props.skillTitle}</h3>
-            <p>{props.skillPar}</p>
+            <H3TitleStyled>{props.skillTitle}</H3TitleStyled>
+            <H3DescriptionStyled>{props.skillPar}</H3DescriptionStyled>
         </SkillWrapperStyled>
     )
 }
 
 const SkillWrapperStyled = styled.div`
-    display: flex;
     flex:1 1 auto;
+    display: flex;
     flex-direction: column;
     gap: 15px;
     justify-content: space-between;
     align-items: center;
-    width: calc(100% / 4 - 15px);
+    width: calc(100% / 3 - 20px);
     min-width: 240px;
-    height: 250px;
     padding: 15px;
-    background-color: rgb(241, 241, 241);    
+    background-color: rgb(241, 241, 241); 
+
+    
+    svg {
+        flex-shrink: 0;
+    }
 `

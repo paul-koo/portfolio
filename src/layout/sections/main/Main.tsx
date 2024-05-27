@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import myphoto from "../../../assets/images/024compresB.png"
+import myphoto from "../../../assets/images/photo.png"
 
 export function Main() {
     return (
@@ -24,6 +24,7 @@ const StyledMain = styled.section`
     display: flex;
     padding: 0px 75px;
     background-color:rgba(255, 255, 255, 0.696);
+    
 
     button {
         border-radius: 5px;

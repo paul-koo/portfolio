@@ -4,7 +4,7 @@ import { H3TitleStyled } from "../../../../components/H3TitleStyled";
 import { H3DescriptionStyled } from "../../../../components/H3DescriptionStyled";
 
 type SkillPropsType = {
-    iconId: "ts" | "react" | "js" | "html" | "gitHub" | "git" | "css" | "styledComponents";
+    iconId: string;
     iconWidth?: string
     iconHeight?: string
     iconViewBox?: string

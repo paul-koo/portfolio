@@ -2,7 +2,7 @@ import iconsSprite from '../../assets/images/icons-sprite.svg'
 
 
 export type IconsPropsType = {
-    iconId: "ts" | "react" | "js" | "html" | "gitHub" | "git" | "css" | "styledComponents",
+    iconId: string,
     width?: string,
     height?: string,
     viewBox?: string

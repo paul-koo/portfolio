@@ -18,7 +18,6 @@ export function Contact() {
 const StyledContact = styled.section`
     flex-direction: column;
     align-items: center;
-    min-height: 50vh;
 
     button {
         width: 100px;

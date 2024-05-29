@@ -6,6 +6,7 @@ import { Skills } from './layout/sections/skills/Skills';
 import { Projects } from './layout/sections/projects/Projects';
 import { projectsData } from './projectData';
 import { Contact } from './layout/sections/contact/Contact';
+import { Footer } from './layout/footer/Footer';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Skills/>
             <Projects data={projectsData}/>
             <Contact/>
+            <Footer/>
         </Wrapper>
     );
 }

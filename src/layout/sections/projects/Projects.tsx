@@ -27,9 +27,7 @@ const StyledProjects = styled.section`
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    padding: 0px 75px;
     min-height: 100vh;
-    background-color: #a3d2fabb;
 `
 
 // imgSrc={elem.scrImg} title={elem.title} description={elem.description} alt={elem.alt}

@@ -32,7 +32,7 @@ const SkillWrapperStyled = styled.div`
     width: calc(100% / 3 - 20px);
     min-width: 240px;
     padding: 15px;
-    background-color: rgb(241, 241, 241); 
+    background-color: #FFFFFF; 
 
     
     svg {

@@ -10,7 +10,7 @@ export function Skills() {
             <FlexWrapperStyled wrap="wrap" gap="20px">
                 <Skill iconId="js" iconViewBox="0 0 110 110" iconWidth="75px" iconHeight="75px" skillTitle="JavaScript" skillPar="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"/>
                 <Skill iconId="ts" skillTitle="TypeScript" iconWidth="75px" iconHeight="75px" skillPar="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"/>
-                <Skill iconId="html5-2" iconViewBox="0 0 32 32" iconWidth="75px" iconHeight="75px" skillTitle="HTML5" skillPar="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"/>
+                <Skill iconId="html5" iconViewBox="5 2 110 115" iconWidth="75px" iconHeight="75px" skillTitle="HTML5" skillPar="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"/>
                 <Skill iconId="css" iconViewBox="0 0 110 110" iconWidth="75px" iconHeight="75px" skillTitle="CSS" skillPar="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"/>
                 <Skill iconId="react" iconViewBox="0 0 115 105" iconWidth="75px" iconHeight="75px" skillTitle="React" skillPar="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"/>
                 <Skill iconId="gitHub" iconViewBox="-6 0 95 85" iconWidth="75px" iconHeight="75px" skillTitle="GitHub" skillPar="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"/>
@@ -22,10 +22,6 @@ export function Skills() {
 }
 
 const StyledSkills = styled.section`
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 0px 75px;
-    background-color:rgba(91, 90, 90, 0.696);
 `

@@ -28,6 +28,10 @@ const Wrapper = styled.div`
     max-width: 1440px;
     min-height: 100vh;
     margin: auto;
-    padding: 0 75px;
+    padding: 0 150px;
+
+    & section:nth-child(n + 3) {
+        margin-top: 70px;
+    }
 `
 

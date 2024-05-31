@@ -3,6 +3,7 @@ import { SectionTitleStyled } from "../../../components/SectionTitleStyled"
 import { Skill } from "./skill/Skill"
 import { FlexWrapperStyled } from "../../../components/FlexWrapperStyled"
 import { SectionDescription } from "../../../components/SectionDescription"
+import addnew from "../../../assets/images/addnew.png"
 
 export function Skills() {
     return (
@@ -17,7 +18,8 @@ export function Skills() {
                 <Skill iconId="react" iconViewBox="0 0 115 105" iconWidth="75px" iconHeight="75px" skillTitle="React" skillPar="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"/>
                 <Skill iconId="gitHub" iconViewBox="-6 0 95 85" iconWidth="75px" iconHeight="75px" skillTitle="GitHub" skillPar="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"/>
                 <Skill iconId="git" iconViewBox="0 0 110 110" iconWidth="75px" iconHeight="75px" skillTitle="GIT" skillPar="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"/>
-                <Skill iconId="styledComponents" iconViewBox="0 10 24 1" iconWidth="75px" iconHeight="75px" skillTitle="StyledComponents" skillPar="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"/>
+                <Skill iconId="styledComponents" iconViewBox="0 7 16 1" iconWidth="75px" iconHeight="75px" skillTitle="StyledComponents" skillPar="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"/>
+                <ImgStyled src={addnew} alt="new" width="auto"/>
             </FlexWrapperStyled>
         </StyledSkills>
     )
@@ -27,4 +29,11 @@ const StyledSkills = styled.section`
     display: flex;
     align-items: center;
     flex-direction: column;
+`
+
+const ImgStyled = styled.img`
+    width: calc(100% / 3 - 13px);
+    min-width: 240px;
+    min-height: 300px;
+    object-fit: fill;
 `

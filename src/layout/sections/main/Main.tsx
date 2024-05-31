@@ -25,11 +25,10 @@ export function Main() {
 const StyledMain = styled.section`
     background-image: url(${Group});
     background-color: #FFFFFF;
-    background-size: contain;
+    background-size: cover;
     display: flex;
     padding: 0 60px;
     gap: 40px;
-    
 
     button {
         border-radius: 5px;
@@ -40,7 +39,6 @@ const StyledMain = styled.section`
 ` 
 
 const Photo = styled.img`
-    max-width: 50%;
     object-fit: cover;
 `
 

@@ -27,10 +27,11 @@ const SkillWrapperStyled = styled.div`
     display: flex;
     flex-direction: column;
     gap: 15px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: calc(100% / 3 - 20px);
     min-width: 240px;
+    min-height: 300px;
     padding: 15px;
     background-color: #FFFFFF; 
 

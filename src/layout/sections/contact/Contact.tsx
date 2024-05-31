@@ -38,6 +38,7 @@ const LabelStyled = styled.label`
     width: 100%;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 `
 
 const InputStyled = styled.input`

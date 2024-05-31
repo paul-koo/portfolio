@@ -1,8 +1,8 @@
 import styled from "styled-components"
-import myphoto from "../../../assets/images/photo.png"
+import myphoto from "../../../assets/images/YourImage1.png"
 import { H3DescriptionStyled } from "../../../components/H3DescriptionStyled"
 import { FlexWrapperStyled } from "../../../components/FlexWrapperStyled"
-
+import Group from "../../../assets/images/Group 244.png"
 export function Main() {
     return (
         <StyledMain>
@@ -23,9 +23,12 @@ export function Main() {
 }
 
 const StyledMain = styled.section`
+    background-image: url(${Group});
+    background-color: #FFFFFF;
+    background-size: contain;
     display: flex;
-    background-color:rgb(255, 255, 255);
     padding: 0 60px;
+    gap: 40px;
     
 
     button {

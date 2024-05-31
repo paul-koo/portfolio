@@ -28,6 +28,5 @@ const StyledProjects = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
-    min-height: 100vh;
+
 `

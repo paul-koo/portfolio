@@ -1,29 +1,20 @@
 import styled from "styled-components"
+import { myTheme } from "../../styles/Theme.styled"
 
-export function Menu() {
-    return (
-        <StyledMenu>
-            <ul>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Skills</a>
-                </li>
-                <li>
-                    <a href="#">Projects</a>
-                </li>
-                <li>
-                    <a href="#">Contacts</a>
-                </li>
-            </ul>
-        </StyledMenu>
-    )
+type MenuPropsType = {
+    items: Array<string>
 }
 
-const StyledMenu = styled.nav`
-    ul {
-        display: flex;
-        gap: 40px;
-    }
-`
+export function Menu(props: MenuPropsType) {
+    return (
+        <ul>
+            {props.items.map((elem) => {
+                return (
+                    <li>
+                        <a href={`#${props.items}`}>{elem}</a> 
+                    </li>
+                )
+            })}
+        </ul>
+    )
+}

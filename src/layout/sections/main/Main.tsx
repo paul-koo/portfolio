@@ -3,6 +3,7 @@ import myphoto from "../../../assets/images/YourImage1.png"
 import { H3DescriptionStyled } from "../../../components/H3DescriptionStyled"
 import { FlexWrapperStyled } from "../../../components/FlexWrapperStyled"
 import Group from "../../../assets/images/Group 244.png"
+import { myTheme } from "../../../styles/Theme.styled"
 export function Main() {
     return (
         <StyledMain>
@@ -46,6 +47,6 @@ const H1TitleStyled = styled.h1`
     font-size: 48px;
 
     span {
-        color: #FFB400;
+        color: ${myTheme.color.yellow.main};
     }
 `

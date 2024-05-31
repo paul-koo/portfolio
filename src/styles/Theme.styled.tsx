@@ -7,13 +7,19 @@ export const myTheme = {
 
     },
 
+    fontWeight: {
+        bold: "700",
+        medium: "500",
+        light: "400"
+    },
+
     color: {
         yellow: {
             main: "#ffb400",
             opacity: "rgba(255, 180, 0, 0.95)"
         },
         white: {
-            main: "#fffff",
+            main: "#ffffff",
             secondary: "#f0f0f6;"
         },
         grey: {

@@ -4,12 +4,15 @@ import { Skill } from "./skill/Skill"
 import { FlexWrapperStyled } from "../../../components/FlexWrapperStyled"
 import { SectionDescription } from "../../../components/SectionDescription"
 import addnew from "../../../assets/images/addnew.png"
+import { SectionHeaderWrapperStyled } from "../../../components/SectionHeaderWrapperStyled"
 
 export function Skills() {
     return (
         <StyledSkills>
-            <SectionTitleStyled>Skills</SectionTitleStyled>
-            <SectionDescription>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum</SectionDescription>
+            <SectionHeaderWrapperStyled>
+                <SectionTitleStyled>Skills</SectionTitleStyled>
+                <SectionDescription>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum</SectionDescription>
+            </SectionHeaderWrapperStyled>
             <FlexWrapperStyled wrap="wrap" gap="20px">
                 <Skill iconId="js" iconViewBox="0 0 110 110" iconWidth="75px" iconHeight="75px" skillTitle="JavaScript" skillPar="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"/>
                 <Skill iconId="ts" skillTitle="TypeScript" iconWidth="75px" iconHeight="75px" skillPar="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim"/>
@@ -32,8 +35,9 @@ const StyledSkills = styled.section`
 `
 
 const ImgStyled = styled.img`
-    width: calc(100% / 3 - 13px);
+    width: calc(100% / 3 - 20px);
     min-width: 240px;
     min-height: 300px;
     object-fit: fill;
+    flex-grow: 1;
 `

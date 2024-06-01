@@ -4,6 +4,7 @@ import { Project } from "./project/Project";
 import styled from "styled-components";
 import { ProjectDataPropsType } from "../../../projectData";
 import { SectionDescription } from "../../../components/SectionDescription";
+import { SectionHeaderWrapperStyled } from "../../../components/SectionHeaderWrapperStyled";
 
 
 
@@ -11,8 +12,10 @@ import { SectionDescription } from "../../../components/SectionDescription";
 export function Projects(props: {data: Array<ProjectDataPropsType>}) {
     return (
         <StyledProjects>
-            <SectionTitleStyled>Projects</SectionTitleStyled>
-            <SectionDescription>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum</SectionDescription>
+            <SectionHeaderWrapperStyled>
+                <SectionTitleStyled>Projects</SectionTitleStyled>
+                <SectionDescription>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum</SectionDescription>
+            </SectionHeaderWrapperStyled>
             <FlexWrapperStyled direction="column" gap="50px">
                 {props.data.map((elem) => {
                     return (

@@ -54,7 +54,6 @@ const NavWrapperStyled = styled.nav`
         background-color: ${myTheme.color.yellow.opacity};
         position: absolute;
         top: 22px;
-        transition: width 0.5s ease-out;
         opacity: 0;
         transition: width 0.5s, opacity 0.8s;
         left: 0;

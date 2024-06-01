@@ -1,10 +1,13 @@
 import styled from "styled-components"
 import { SectionTitleStyled } from "../../../components/SectionTitleStyled"
+import { SectionHeaderWrapperStyled } from "../../../components/SectionHeaderWrapperStyled"
 
 export function Contact() {
     return (
         <StyledContact>
-            <SectionTitleStyled>Contact</SectionTitleStyled>
+            <SectionHeaderWrapperStyled>
+                <SectionTitleStyled>Contact</SectionTitleStyled>
+            </SectionHeaderWrapperStyled>
             <FormStyled>
                 <LabelStyled>Your name<InputStyled type={"text"} name={"name"} pattern={"[a-zA-Z]{2,}"} required/></LabelStyled>
                 <LabelStyled>Your Email<InputStyled type={"email"} name={"email"} required/></LabelStyled>

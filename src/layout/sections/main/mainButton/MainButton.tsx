@@ -27,6 +27,7 @@ const Button = styled.a<MainButtonPropsType>`
     ${props => props.status === "inactive" && css<MainButtonPropsType>`
         background-color: transparent;
         border: 2px solid ${myTheme.color.black.light};
+        transition: 0.3s linear;
 
 
 
@@ -35,6 +36,7 @@ const Button = styled.a<MainButtonPropsType>`
     ${props => props.status === "active" && css<MainButtonPropsType>`
         background-color: ${myTheme.color.yellow.main};
         color: ${myTheme.color.black.light};
+        transition: 0.3s linear;
 
 
 
@@ -44,5 +46,6 @@ const Button = styled.a<MainButtonPropsType>`
             background-color: ${myTheme.color.black.light};
             color: ${myTheme.color.yellow.main};
             border: none;
+            transition: 0.3s linear;
         } 
 `

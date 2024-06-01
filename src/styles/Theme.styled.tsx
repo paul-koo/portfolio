@@ -16,7 +16,8 @@ export const myTheme = {
     color: {
         yellow: {
             main: "#ffb400",
-            opacity: "rgba(255, 180, 0, 0.95)"
+            opacity: "rgba(255, 180, 0, 0.95)",
+            test: "#fdc435;"
         },
         white: {
             main: "#ffffff",

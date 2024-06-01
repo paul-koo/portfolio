@@ -21,7 +21,7 @@ const StyledHeader = styled.header`
     justify-content: space-between;
     background-color: ${myTheme.color.white.main};
     height: 40px;
-    padding: 0 20px;
+    padding: 0 30px;
 `
 
 const NavWrapperStyled = styled.nav`
@@ -56,7 +56,6 @@ const NavWrapperStyled = styled.nav`
         top: 22px;
         transition: width 0.5s ease-out;
         opacity: 0;
-        z-index: -1;
         transition: width 0.5s, opacity 0.8s;
         left: 0;
         right: 0;
@@ -64,7 +63,6 @@ const NavWrapperStyled = styled.nav`
     }
 
     li:hover::after {
-        z-index: 0;
         width: 100%;
         opacity: 1;
         left: 0;

@@ -1,22 +1,25 @@
 import styled, { css } from "styled-components"
-import { myTheme } from "../../../../styles/Theme.styled"
+import { myTheme } from "../styles/Theme.styled"
 
-type MainButtonPropsType = {
+type ButtonStyledPropsType = {
     status: "active" | "inactive"
     text?: string
     href?: string
+    width?: string
+    type?: "button" | "submit" | "reset"
+    tag?: "a" | "button"
 }
 
-export function MainButton(props: MainButtonPropsType) {
+export function ButtonStyled(props: ButtonStyledPropsType) {
     return (
-        <Button href={`#${props.href}` || "#"} status={props.status}>
+        <Button as={props.tag} href={`#${props.href}`} status={props.status} width={props.width} type={props.type}>
             {props.text}
         </Button>
     )
 }
 
-const Button = styled.a<MainButtonPropsType>`
-    width: 115px;
+const Button = styled.button<ButtonStyledPropsType>`
+    width: ${props => props.width || "115px"};
     height: 45px;
     font-size: ${myTheme.fontSize.sectionDescription};
     font-weight: ${myTheme.fontWeight.bold};
@@ -24,7 +27,7 @@ const Button = styled.a<MainButtonPropsType>`
     text-align: center;
     align-content: center;
     
-    ${props => props.status === "inactive" && css<MainButtonPropsType>`
+    ${props => props.status === "inactive" && css<ButtonStyledPropsType>`
         background-color: transparent;
         border: 2px solid ${myTheme.color.black.light};
         transition: 0.3s linear;
@@ -33,7 +36,7 @@ const Button = styled.a<MainButtonPropsType>`
 
     `}
      
-    ${props => props.status === "active" && css<MainButtonPropsType>`
+    ${props => props.status === "active" && css<ButtonStyledPropsType>`
         background-color: ${myTheme.color.yellow.main};
         color: ${myTheme.color.black.light};
         transition: 0.3s linear;

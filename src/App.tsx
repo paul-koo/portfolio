@@ -25,13 +25,13 @@ function App() {
 export default App;
 
 const Wrapper = styled.div`
-    max-width: 1440px;
+    max-width: 1140px;
     min-height: 100vh;
     margin: auto;
-    padding: 0 150px;
+    position: relative;
 
-    & section:nth-child(n + 3) {
-        margin-top: 70px;
-    }
+    /* & section:nth-child(n + 2) {
+        margin-top: 40px;
+    } */
 `
 

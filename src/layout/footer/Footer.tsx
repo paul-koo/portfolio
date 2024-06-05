@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { FlexWrapperStyled } from "../../components/FlexWrapperStyled";
 import { Incons } from "../../components/icon/Icons";
+import { myTheme } from "../../styles/Theme.styled";
 
 export function Footer() {
     return (
@@ -17,7 +18,7 @@ export function Footer() {
                     <Incons iconId={"post"} width={"30px"} height={"30px"} viewBox={"0 0 23 23"}/>
                 </a>
                 <a href="https://linkedin.com/" target="_blank" rel="noreferrer">
-                    <Incons iconId={"linkedin"} width={"30px"} height={"30px"} viewBox={"0 0 23 23"}/>
+                    <Incons iconId={"linkedin"} width={"30px"} height={"30px"} viewBox={"0 0 23 23"} fill={`${myTheme.color.black.light}`}/>
                 </a>
             </FlexWrapperStyled>
             <Copyright>© 2024 All Rights Reserved.</Copyright>

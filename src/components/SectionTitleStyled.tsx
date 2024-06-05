@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { myTheme } from "../styles/Theme.styled";
 
 export const SectionTitleStyled = styled.h2`
-    font-size: 40px;
+    color: ${myTheme.color.black.light};
+    font-size: ${myTheme.fontSize.sectionTitle};
     text-align: center;
     position: relative;
     align-self: center;
@@ -15,7 +16,7 @@ export const SectionTitleStyled = styled.h2`
         height: 12px;
         background-color: ${myTheme.color.yellow.main};
         border-radius: 5px;
-        top:35px;
+        top:30px;
         left: 0;
         z-index: -1;
     }

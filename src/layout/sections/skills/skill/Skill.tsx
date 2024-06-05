@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Incons } from "../../../../components/icon/Icons";
 import { H3TitleStyled } from "../../../../components/H3TitleStyled";
 import { H3DescriptionStyled } from "../../../../components/H3DescriptionStyled";
+import { myTheme } from "../../../../styles/Theme.styled";
 
 type SkillPropsType = {
     iconId: string;
@@ -31,12 +32,8 @@ const SkillWrapperStyled = styled.div`
     align-items: center;
     width: calc(100% / 3 - 20px);
     min-width: 240px;
+    max-width: 400px;
     min-height: 300px;
     padding: 15px;
-    background-color: #FFFFFF; 
-
-    
-    svg {
-        flex-shrink: 0;
-    }
+    background-color: ${myTheme.color.bgColor.secondary}; 
 `

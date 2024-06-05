@@ -3,7 +3,7 @@ import { SectionTitleStyled } from "../../../components/SectionTitleStyled";
 import { Project } from "./project/Project";
 import styled from "styled-components";
 import { ProjectDataPropsType } from "../../../projectData";
-import { SectionDescription } from "../../../components/SectionDescription";
+import { SectionDescription } from "../../../components/SectionDescriptionStyled";
 import { SectionHeaderWrapperStyled } from "../../../components/SectionHeaderWrapperStyled";
 
 
@@ -28,6 +28,7 @@ export function Projects(props: {data: Array<ProjectDataPropsType>}) {
 }
 
 const StyledProjects = styled.section`
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -6,6 +6,8 @@ export type IconsPropsType = {
     width?: string,
     height?: string,
     viewBox?: string
+    fill?: string
+    stroke?: string
 }
 export function Incons(props: IconsPropsType) {
     return (

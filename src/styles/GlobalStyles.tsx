@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { myTheme } from "./Theme.styled";
 
 export const GlobalStyles = createGlobalStyle`
     *,
@@ -10,16 +11,13 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        font-family: Inter, sans-serif;
-        /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
         sans-serif;
         -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale; */
-        background-color: #F0F0F6;
-    }
-    code {
-        font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+        -moz-osx-font-smoothing: grayscale;
+        color: ${myTheme.color.font.main};
+        background-color: ${myTheme.color.bgColor.main};
     }
 
     li {
@@ -29,6 +27,14 @@ export const GlobalStyles = createGlobalStyle`
     a {
         text-decoration: none;
         color: inherit;
+    }
+
+    button {
+        border: none;
+    }
+
+    section + section {
+        margin-top: 50px;
     }
 
 `

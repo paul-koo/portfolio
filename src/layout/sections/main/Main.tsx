@@ -4,7 +4,7 @@ import { H3DescriptionStyled } from "../../../components/H3DescriptionStyled"
 import { FlexWrapperStyled } from "../../../components/FlexWrapperStyled"
 import Group from "../../../assets/images/Group 244.png"
 import { myTheme } from "../../../styles/Theme.styled"
-import { MainButton } from "./mainButton/MainButton"
+import { ButtonStyled } from "../../../components/ButtonStyled"
 export function Main() {
     return (
         <StyledMain>
@@ -16,8 +16,8 @@ export function Main() {
                     delectus eius ullam. Similique, ea.
                 </H3DescriptionStyled>
                 <FlexWrapperStyled gap={"20px"} padding="0 0 30px 0">
-                    <MainButton status="active" text="Projects" href="#Project"/>
-                    <MainButton status="inactive" text="LinkedIn" href="#"/>
+                    <ButtonStyled status="active" text="Projects" href="#Project"/>
+                    <ButtonStyled status="inactive" text="LinkedIn" href="#"/>
                 </FlexWrapperStyled>
             </FlexWrapperStyled>
             <Photo src={myphoto} alt="myphoto"/>
@@ -26,19 +26,14 @@ export function Main() {
 }
 
 const StyledMain = styled.section`
+    flex-grow: 1;
     background-image: url(${Group});
     background-color: #FFFFFF;
     background-size: cover;
     display: flex;
-    padding: 0 30px;
-    gap: 40px;
-
-    button {
-        border-radius: 5px;
-        width: 100px;
-        height: 40px;
-        background-color: #FFB400;
-    }
+    padding: 40px ${myTheme.contentPadding} 0;
+    /* margin-top: 40px; */
+    gap: calc(100%/20);
 ` 
 
 const Photo = styled.img`

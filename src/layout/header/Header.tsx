@@ -21,7 +21,14 @@ const StyledHeader = styled.header`
     justify-content: space-between;
     background-color: ${myTheme.color.white.main};
     height: 40px;
-    padding: 0 30px;
+    padding: 0 ${myTheme.contentPadding};
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 1140px;
+    margin: 0 auto;
+    z-index: 999; */
 `
 
 const NavWrapperStyled = styled.nav`

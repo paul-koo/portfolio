@@ -4,13 +4,14 @@ import { myTheme } from "../../styles/Theme.styled"
 export function Logo() {
     return (
         <LogoStyled href="google.com">
-            Pavel Koltun
+            Pavel
         </LogoStyled>
     )
 }
 
 const LogoStyled = styled.a`
-    color: ${myTheme.color.black.light};
+    color: ${myTheme.color.font.main};
     font-weight: ${myTheme.fontWeight.bold};
+    font-size: ${myTheme.fontSize.sectionDescription};
     align-self: center;
 `

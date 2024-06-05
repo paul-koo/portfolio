@@ -7,7 +7,7 @@ import { myTheme } from "../../../styles/Theme.styled"
 import { ButtonStyled } from "../../../components/ButtonStyled"
 export function Main() {
     return (
-        <StyledMain>
+        <StyledMain id="About">
             <FlexWrapperStyled direction="column" justify="center" gap="20px">
                 <H1TitleStyled>I’m Rayan Adlrdard <span>Front-end</span> Developer</H1TitleStyled>
                 <H3DescriptionStyled>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
@@ -16,8 +16,8 @@ export function Main() {
                     delectus eius ullam. Similique, ea.
                 </H3DescriptionStyled>
                 <FlexWrapperStyled gap={"20px"} padding="0 0 30px 0">
-                    <ButtonStyled status="active" text="Projects" href="#Project"/>
-                    <ButtonStyled status="inactive" text="LinkedIn" href="#"/>
+                    <ButtonStyled tag="a" status="active" text="Projects" href="Projects"/>
+                    <ButtonStyled tag="a" status="inactive" text="LinkedIn"/>
                 </FlexWrapperStyled>
             </FlexWrapperStyled>
             <Photo src={myphoto} alt="myphoto"/>
@@ -28,11 +28,10 @@ export function Main() {
 const StyledMain = styled.section`
     flex-grow: 1;
     background-image: url(${Group});
-    background-color: #FFFFFF;
+    background-color: ${myTheme.color.bgColor.secondary};
     background-size: cover;
     display: flex;
-    padding: 40px ${myTheme.contentPadding} 0;
-    /* margin-top: 40px; */
+    padding: 0 ${myTheme.contentPadding};
     gap: calc(100%/20);
 ` 
 
@@ -41,14 +40,13 @@ const Photo = styled.img`
     object-fit: contain;
     margin: 0 auto;
     align-self: flex-end;
-    
 `
 
 const H1TitleStyled = styled.h1`
     font-size: 48px;
 
     span {
-        color: ${myTheme.color.yellow.main};
+        color: ${myTheme.color.accent};
     }
 `
 

@@ -9,7 +9,7 @@ import { SectionHeaderWrapperStyled } from "../../../components/SectionHeaderWra
 export function Skills() {
     return (
         <StyledSkills>
-            <SectionHeaderWrapperStyled>
+            <SectionHeaderWrapperStyled id="Skills">
                 <SectionTitleStyled>Skills</SectionTitleStyled>
                 <SectionDescription>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum</SectionDescription>
             </SectionHeaderWrapperStyled>
@@ -40,5 +40,5 @@ const ImgStyled = styled.img`
     max-width: 400px;
     min-height: 300px;
     object-fit: cover;
-    flex-wrap: 1;
+    flex-grow: 1;
 `

@@ -29,7 +29,7 @@ const Button = styled.button<ButtonStyledPropsType>`
     
     ${props => props.status === "inactive" && css<ButtonStyledPropsType>`
         background-color: transparent;
-        border: 2px solid ${myTheme.color.black.light};
+        border: 2px solid ${myTheme.color.font.main};
         transition: 0.3s linear;
 
 
@@ -37,8 +37,8 @@ const Button = styled.button<ButtonStyledPropsType>`
     `}
      
     ${props => props.status === "active" && css<ButtonStyledPropsType>`
-        background-color: ${myTheme.color.yellow.main};
-        color: ${myTheme.color.black.light};
+        background-color: ${myTheme.color.accent};
+        color: ${myTheme.color.font.main};
         transition: 0.3s linear;
 
 
@@ -46,9 +46,13 @@ const Button = styled.button<ButtonStyledPropsType>`
     `}
 
     &:hover {
-            background-color: ${myTheme.color.black.light};
-            color: ${myTheme.color.yellow.main};
+            background-color: ${myTheme.color.font.main};
+            color: ${myTheme.color.accent};
             border: none;
             transition: 0.3s linear;
-        } 
+        }
+        
+    &:active {
+        transform: translate(3px, 3px);
+    }
 `

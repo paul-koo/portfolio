@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { myTheme } from "../styles/Theme.styled";
 
 export const SectionTitleStyled = styled.h2`
-    color: ${myTheme.color.black.light};
+    color: ${myTheme.color.font.main};
     font-size: ${myTheme.fontSize.sectionTitle};
     text-align: center;
     position: relative;
@@ -14,10 +14,11 @@ export const SectionTitleStyled = styled.h2`
         position: absolute;
         width: 100%;
         height: 12px;
-        background-color: ${myTheme.color.yellow.main};
+        background-color: ${myTheme.color.accent};
         border-radius: 5px;
         top:30px;
-        left: 0;
+        left: 50%;
+        transform: translateX(-50%);
         z-index: -1;
     }
 `

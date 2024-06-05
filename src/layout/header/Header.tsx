@@ -17,12 +17,14 @@ export function Header() {
 }
 
 const StyledHeader = styled.header`
+    font-size: ${myTheme.fontSize.sectionDescription};
     display: flex;
     justify-content: space-between;
-    background-color: ${myTheme.color.white.main};
+    background-color: ${myTheme.color.bgColor.secondary};
     height: 40px;
     padding: 0 ${myTheme.contentPadding};
-    /* position: fixed;
+    /* padding: 0 ${myTheme.contentPadding};
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -33,7 +35,7 @@ const StyledHeader = styled.header`
 
 const NavWrapperStyled = styled.nav`
     display: flex;
-    color: ${myTheme.color.black.light};
+    color: ${myTheme.color.font.main};
     font-weight: ${myTheme.fontWeight.bold};
 
     ul {
@@ -54,13 +56,12 @@ const NavWrapperStyled = styled.nav`
     
     li::after {
         content: "";
-        display: block;
         width: 0%;
-        height: 8px;
+        height: 7px;
         border-radius: 3px;
-        background-color: ${myTheme.color.yellow.opacity};
+        background-color: ${myTheme.color.accent};
         position: absolute;
-        top: 22px;
+        top: 24px;
         opacity: 0;
         transition: width 0.5s, opacity 0.8s;
         left: 0;
@@ -74,6 +75,5 @@ const NavWrapperStyled = styled.nav`
         left: 0;
         right: 0;
         margin: 0 auto;
-
     }
 `

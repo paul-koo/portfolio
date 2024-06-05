@@ -25,9 +25,10 @@ function App() {
 export default App;
 
 const Wrapper = styled.div`
-    max-width: 1140px;
+    max-width: 1170px;
     min-height: 100vh;
     margin: auto;
+    padding: 0 15px;
     position: relative;
 
     /* & section:nth-child(n + 2) {

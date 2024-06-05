@@ -2,6 +2,10 @@ import { createGlobalStyle } from "styled-components";
 import { myTheme } from "./Theme.styled";
 
 export const GlobalStyles = createGlobalStyle`
+    html {
+        scroll-behavior: smooth;
+    }
+    
     *,
     *::after,
     *::before {

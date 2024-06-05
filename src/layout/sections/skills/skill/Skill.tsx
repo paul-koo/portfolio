@@ -36,4 +36,8 @@ const SkillWrapperStyled = styled.div`
     min-height: 300px;
     padding: 15px;
     background-color: ${myTheme.color.bgColor.secondary}; 
+
+    a:hover {
+        
+    }
 `

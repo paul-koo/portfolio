@@ -22,11 +22,6 @@ export function Project(props: {data: ProjectDataPropsType}) {
     )
 }
 
-const ProjectImgStyled = styled.img`
-    width: 50%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-`
 
 const ProjectWrapperStyled = styled(FlexWrapperStyled)`
     justify-content: center;
@@ -41,8 +36,14 @@ const DescriptionWrapperStyled = styled.div`
     flex-direction: column;
     width: 50%;
     justify-content: center;
-    background-color: ${myTheme.color.white.main};
-    padding: 0 50px;
+    background-color: ${myTheme.color.bgColor.secondary};
+    padding: 0 30px;
     gap: 25px;
 
+`
+
+const ProjectImgStyled = styled.img`
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 `

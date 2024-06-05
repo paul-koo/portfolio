@@ -10,9 +10,6 @@ type FlexWrapperPropsType = {
     height?: string;
     padding?: string;
     bgc?: string;
-    rowGap?: string;
-    colGap?: string;
-    
 }
 
 export const FlexWrapperStyled = styled.div<FlexWrapperPropsType>`

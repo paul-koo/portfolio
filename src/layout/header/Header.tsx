@@ -21,8 +21,7 @@ const StyledHeader = styled.header`
     display: flex;
     justify-content: space-between;
     background-color: ${myTheme.color.bgColor.secondary};
-    height: 40px;
-    padding: 0 ${myTheme.contentPadding};
+    padding: 25px ${myTheme.contentPadding};
     /* padding: 0 ${myTheme.contentPadding};
     position: fixed;
     top: 0;
@@ -49,7 +48,6 @@ const NavWrapperStyled = styled.nav`
 
         a {
             z-index: 2;
-            align-content: center;
         }
 
     }
@@ -61,7 +59,7 @@ const NavWrapperStyled = styled.nav`
         border-radius: 3px;
         background-color: ${myTheme.color.accent};
         position: absolute;
-        top: 24px;
+        top: 16px;
         opacity: 0;
         transition: width 0.5s, opacity 0.8s;
         left: 0;

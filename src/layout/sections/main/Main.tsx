@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import myphoto from "../../../assets/images/YourImage1.png"
-import { H3DescriptionStyled } from "../../../components/H3DescriptionStyled"
+import { DescriptionStyled } from "../../../components/DescriptionStyled"
 import { FlexWrapperStyled } from "../../../components/FlexWrapperStyled"
 import Group from "../../../assets/images/Group 244.png"
 import { myTheme } from "../../../styles/Theme.styled"
@@ -10,11 +10,11 @@ export function Main() {
         <StyledMain id="About">
             <FlexWrapperStyled direction="column" justify="center" gap="20px">
                 <H1TitleStyled>I’m Rayan Adlrdard <span>Front-end</span> Developer</H1TitleStyled>
-                <H3DescriptionStyled>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                <DescriptionStyled>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                     Dolor omnis vero quisquam, placeat asperiores quibusdam sunt 
                     fugit cumque ratione quos. Expedita dolorum amet esse, natus 
                     delectus eius ullam. Similique, ea.
-                </H3DescriptionStyled>
+                </DescriptionStyled>
                 <FlexWrapperStyled gap={"20px"} padding="0 0 30px 0">
                     <ButtonStyled tag="a" status="active" text="Projects" href="Projects"/>
                     <ButtonStyled tag="a" status="inactive" text="LinkedIn"/>

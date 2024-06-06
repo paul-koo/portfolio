@@ -50,7 +50,7 @@ const LabelStyled = styled.label`
     cursor: pointer;
 
     textarea {
-        /* resize: none; */
+        resize: none;
         min-height: 150px;
     }
 `

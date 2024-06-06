@@ -53,6 +53,6 @@ const Button = styled.button<ButtonStyledPropsType>`
         }
         
     &:active {
-        transform: translate(3px, 3px);
+        transform: translateY(-4px);
     }
 `

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { FlexWrapperStyled } from "../../../../components/FlexWrapperStyled";
 import { H3TitleStyled } from "../../../../components/H3TitleStyled";
-import { H3DescriptionStyled } from "../../../../components/H3DescriptionStyled";
+import { DescriptionStyled } from "../../../../components/DescriptionStyled";
 import { ProjectDataPropsType } from "../../../../projectData";
 import { myTheme } from "../../../../styles/Theme.styled";
 import { ButtonStyled } from "../../../../components/ButtonStyled";
@@ -14,7 +14,7 @@ export function Project(props: {data: ProjectDataPropsType}) {
         <ProjectWrapperStyled>
             <DescriptionWrapperStyled>
                 <H3TitleStyled>{props.data.title}</H3TitleStyled>
-                <H3DescriptionStyled>{props.data.description}</H3DescriptionStyled>
+                <DescriptionStyled>{props.data.description}</DescriptionStyled>
                 <ButtonStyled tag="a" status={"active"} text={"View Project"} width={"150px"}/>
             </DescriptionWrapperStyled>
             <ProjectImgStyled src={props.data.scrImg} alt={props.data.alt}/>

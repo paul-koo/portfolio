@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Incons } from "../../../../components/icon/Icons";
 import { H3TitleStyled } from "../../../../components/H3TitleStyled";
-import { H3DescriptionStyled } from "../../../../components/H3DescriptionStyled";
+import { DescriptionStyled } from "../../../../components/DescriptionStyled";
 import { myTheme } from "../../../../styles/Theme.styled";
 
 type SkillPropsType = {
@@ -18,7 +18,7 @@ export function Skill(props: SkillPropsType) {
         <SkillWrapperStyled>
             <Incons iconId={props.iconId} width={props.iconWidth} height={props.iconHeight} viewBox={props.iconViewBox}/>
             <H3TitleStyled>{props.skillTitle}</H3TitleStyled>
-            <H3DescriptionStyled>{props.skillPar}</H3DescriptionStyled>
+            <DescriptionStyled>{props.skillPar}</DescriptionStyled>
         </SkillWrapperStyled>
     )
 }
@@ -30,7 +30,7 @@ const SkillWrapperStyled = styled.div`
     gap: 15px;
     justify-content: space-around;
     align-items: center;
-    width: calc(100% / 3 - 20px);
+    width: 300px;
     min-width: 240px;
     max-width: 400px;
     min-height: 300px;

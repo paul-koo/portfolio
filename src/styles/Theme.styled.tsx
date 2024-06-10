@@ -56,5 +56,10 @@ export const myTheme = {
         
     },
 
-    contentPadding: "30px"
+    contentPadding: "30px",
+
+    media: {
+        tablet: "screen and (max-width: 768px)",
+        mobile: "screen and (max-width: 576px)"
+    }
 }

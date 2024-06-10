@@ -27,15 +27,15 @@ const SkillWrapperStyled = styled.div`
     flex:1 1 auto;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    width: 300px;
-    min-width: 240px;
+    width: 280px;
+    /* min-width: 240px;
     max-width: 400px;
-    min-height: 300px;
+    min-height: 300px; */
+    aspect-ratio: 1/1;
     padding: 15px;
-    background-color: ${myTheme.color.bgColor.secondary}; 
+    background-color: ${myTheme.color.bgColor.secondary};
 
     a:hover {
         

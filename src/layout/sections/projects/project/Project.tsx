@@ -15,7 +15,7 @@ export function Project(props: {data: ProjectDataPropsType}) {
             <DescriptionWrapperStyled>
                 <H3TitleStyled>{props.data.title}</H3TitleStyled>
                 <DescriptionStyled>{props.data.description}</DescriptionStyled>
-                <ButtonStyled tag="a" status={"active"} text={"View Project"} width={"150px"}/>
+                <ButtonStyled tag="a" status={"active"} text={"View Project"}/>
             </DescriptionWrapperStyled>
             <ProjectImgStyled src={props.data.scrImg} alt={props.data.alt}/>
         </ProjectWrapperStyled>
@@ -25,6 +25,7 @@ export function Project(props: {data: ProjectDataPropsType}) {
 
 const ProjectWrapperStyled = styled(FlexWrapperStyled)`
     justify-content: center;
+    overflow: hidden;
 
     &:nth-child(2n) {
         flex-direction: row-reverse;
@@ -34,11 +35,13 @@ const ProjectWrapperStyled = styled(FlexWrapperStyled)`
 const DescriptionWrapperStyled = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 5px;
     width: 50%;
-    justify-content: center;
     background-color: ${myTheme.color.bgColor.secondary};
-    padding: 0 30px;
-    gap: 25px;
+    padding: 25px 25px;
+    z-index: 1;
 
 `
 
@@ -46,4 +49,10 @@ const ProjectImgStyled = styled.img`
     width: 50%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
+    transition: all 0.5s;
+
+    &:hover {
+        transform: scale(1.2);
+        transition: all 0.5s;
+    }
 `

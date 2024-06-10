@@ -1,12 +1,39 @@
 
-
+// font-size: calc( (100vw - Vmin)/(Vmax - Vmin) * (Fmax - Fmin) + Fmin);
 export const myTheme = {
     fontSize: {
-        sectionTitle: "36px",
-        h3Title: "28px",
+        h1: "64px",
+        sectionTitle: "48px",
+        h3Title: "38px",
         sectionDescription: "18px",
 
     },
+
+    fontSizeMobile: {
+        h1: "42px",
+        sectionTitle: "42px",
+        h3Title: "32px",
+        sectionDescription: "18px",
+
+    },
+
+    testfontSize: {
+        h1: 64,
+        sectionTitle: 48,
+        h3Title: 38,
+        sectionDescription: 18,
+
+    },
+
+    testfontSizeMobile: {
+        h1: 42,
+        sectionTitle: 42,
+        h3Title: 32,
+        sectionDescription: 18,
+
+    },
+
+
 
     fontWeight: {
         bold: "700",

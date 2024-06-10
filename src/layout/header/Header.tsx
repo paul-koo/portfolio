@@ -2,8 +2,10 @@ import styled from "styled-components";
 import { Logo } from "../../components/logo/Logo";
 import { Menu } from "../../components/menu/Menu";
 import { myTheme } from "../../styles/Theme.styled";
+import { BurgerMenu } from "./burgerMenu/BurgerMenu";
+import { BurgerIcon } from "./burgerMenu/BurgerIcon";
 
-const items = ["About", "Skills", "Projects", "Contacts"]
+export const items = ["About", "Skills", "Projects", "Contacts"]
 
 export function Header() {
     return (
@@ -12,6 +14,8 @@ export function Header() {
             <NavWrapperStyled>
                 <Menu items={items}/>
             </NavWrapperStyled>
+            <BurgerIcon/>
+            <BurgerMenu/>
         </StyledHeader>
     )
 }
@@ -33,13 +37,19 @@ const StyledHeader = styled.header`
 `
 
 const NavWrapperStyled = styled.nav`
+    margin-left: 50px;
     display: flex;
+    max-width: 400px;
+    width: 100%;
+    justify-content: space-between;
     color: ${myTheme.color.font.main};
     font-weight: ${myTheme.fontWeight.bold};
 
     ul {
         display: flex;
-        gap: 40px;
+        justify-content: space-between;
+        width: 100%;
+        gap: 10px;
     }
 
     li {
@@ -48,6 +58,7 @@ const NavWrapperStyled = styled.nav`
 
         a {
             z-index: 2;
+            align-self: center;
         }
 
     }
@@ -75,3 +86,5 @@ const NavWrapperStyled = styled.nav`
         margin: 0 auto;
     }
 `
+
+

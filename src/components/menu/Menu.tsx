@@ -1,4 +1,5 @@
-type MenuPropsType = {
+
+export type MenuPropsType = {
     items: Array<string>
 }
 

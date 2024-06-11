@@ -29,15 +29,14 @@ const SkillWrapperStyled = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 280px;
-    /* min-width: 240px;
-    max-width: 400px;
-    min-height: 300px; */
+    gap: 20px;
+    width: 300px;
     aspect-ratio: 1/1;
     padding: 15px;
     background-color: ${myTheme.color.bgColor.secondary};
+    text-align: center;
 
-    a:hover {
-        
+    @media screen and (max-width: 650px) {
+        aspect-ratio: 2/1
     }
 `

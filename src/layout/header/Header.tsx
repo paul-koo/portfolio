@@ -22,15 +22,11 @@ const StyledHeader = styled.header`
     display: flex;
     justify-content: space-between;
     background-color: ${myTheme.color.bgColor.secondary};
-    padding: 25px ${myTheme.contentPadding};
-    /* padding: 0 ${myTheme.contentPadding};
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    max-width: 1140px;
-    margin: 0 auto;
-    z-index: 999; */
+    padding: 25px 30px;
+
+    @media ${myTheme.media.mobile} {
+        padding: 20px 10px;
+    }
 `
 
 

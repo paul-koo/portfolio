@@ -11,7 +11,6 @@ export function BurgerButton() {
 }
 
 const BurgerButtonWrapper = styled.button<{isOpen: boolean}>`
-    position: fixed;
     right: 45px;
     top: 25px;
     background-color: ${myTheme.color.bgColor.secondary};

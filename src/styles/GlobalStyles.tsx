@@ -39,7 +39,11 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     section + section {
-        margin-top: 50px;
+        margin-top: 100px;
+
+        @media ${myTheme.media.mobile} {
+            margin-top: 50px;
+        }
     }
 
 `

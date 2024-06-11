@@ -14,13 +14,13 @@ export const myTheme = {
         })}`,
         
         h3Title: `${fontSize({
-            Fmax: 38,
-            Fmin: 32
+            Fmax: 36,
+            Fmin: 26
         })}`,
         
         sectionDescription: `${fontSize({
             Fmax: 18,
-            Fmin: 18
+            Fmin: 16
         })}`,
 
     },
@@ -46,7 +46,6 @@ export const myTheme = {
         
     },
 
-    contentPadding: "30px",
 
     media: {
         tablet: "screen and (max-width: 768px)",

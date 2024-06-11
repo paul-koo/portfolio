@@ -18,6 +18,7 @@ export const MobileMenuHeader = function(props: {menuItems: Array<string>}) {
 
 const MobileMenuWrapperStyled = styled.nav`
     display: none;
+    justify-content: flex-end;
     width: 100%;
     color: ${myTheme.color.font.main};
     font-weight: ${myTheme.fontWeight.bold};

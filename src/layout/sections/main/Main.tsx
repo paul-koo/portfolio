@@ -31,9 +31,13 @@ const StyledMain = styled.section`
     background-color: ${myTheme.color.bgColor.secondary};
     background-size: cover;
     display: flex;
-    padding: 0 ${myTheme.contentPadding};
+    padding: 0 30px;
     gap: calc(100%/20);
     flex-wrap: wrap;
+
+    @media ${myTheme.media.mobile} {
+        padding: 0 10px;
+    }
 ` 
 const DescriptionWrapperStyled = styled.div`
     display: flex;
@@ -51,6 +55,11 @@ const Photo = styled.img`
     object-fit: cover;
     margin: 0 auto;
     align-self: flex-end;
+
+    @media ${myTheme.media.mobile} {
+        width: 300px;
+        height: 400px;
+    }
 `
 
 const H1TitleStyled = styled.h1`

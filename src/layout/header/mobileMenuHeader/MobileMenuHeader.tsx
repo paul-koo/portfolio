@@ -1,17 +1,16 @@
 import styled, { css } from "styled-components"
-import { Menu } from "../../../components/menu/Menu"
+import { Menu } from "../headerMenu/Menu"
 import { myTheme } from "../../../styles/Theme.styled"
-import { menuItems } from "../Header"
 import { BurgerButton } from "./burgerButton/BurgerButton"
 
 
 
-export const MobileMenuHeader = function() {
+export const MobileMenuHeader = function(props: {menuItems: Array<string>}) {
     return (
         <MobileMenuWrapperStyled>
             <BurgerButton/>
-            <BurgerMenuWrapper isOpen={true}>
-                <Menu menuItems={menuItems}/>
+            <BurgerMenuWrapper isOpen={false}>
+                <Menu menuItems={props.menuItems}/>
             </BurgerMenuWrapper>
         </MobileMenuWrapperStyled>
     )
@@ -40,21 +39,28 @@ const BurgerMenuWrapper = styled.div<{isOpen: boolean}>`
     bottom: 0;
     overflow: hidden;
     z-index: 999;
+    display: none;
     
     background-color: ${myTheme.color.bgColor.secondary};
 
-    ${props => props.isOpen && css<{isOpen: boolean}> `
-        
+    ${props => props.isOpen === true && css<{isOpen: boolean}>`
+        display: flex;
     `}
 
     ul {
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 30px;
         height: 100%;
-        font-size: ${myTheme.fontSize.h3Title}
-    }
-    
+        font-size: ${myTheme.fontSize.h3Title};
+
+    };
+
+
+
+    /* li::after :hover:hover {
+        width: 100%;
+    } */
+
 `

@@ -1,14 +1,13 @@
 import styled from "styled-components"
-import { Menu } from "../../../components/menu/Menu"
+import { Menu } from "../headerMenu/Menu"
 import { myTheme } from "../../../styles/Theme.styled"
-import { menuItems } from "../Header"
 
 
 
-export const DesktopMenuHeader = function() {
+export const DesktopMenuHeader = function(props: {menuItems: Array<string>}) {
     return (
         <DesktopMenuWrapperStyled>
-                <Menu menuItems={menuItems}/>
+                <Menu menuItems={props.menuItems}/>
         </DesktopMenuWrapperStyled>
     )
 }

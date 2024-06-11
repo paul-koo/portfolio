@@ -4,14 +4,14 @@ import { myTheme } from "../../styles/Theme.styled";
 import { DesktopMenuHeader } from "./desktopMenuHeader/DesktopMenuHeader";
 import { MobileMenuHeader } from "./mobileMenuHeader/MobileMenuHeader";
 
-export const menuItems = ["About", "Skills", "Projects", "Contacts"]
+const menuItems = ["About", "Skills", "Projects", "Contacts"]
 
 export function Header() {
     return (
         <StyledHeader>
             <Logo/>
-            <DesktopMenuHeader/>
-            <MobileMenuHeader/>
+            <DesktopMenuHeader menuItems={menuItems}/>
+            <MobileMenuHeader menuItems={menuItems}/>
         </StyledHeader>
     )
 }

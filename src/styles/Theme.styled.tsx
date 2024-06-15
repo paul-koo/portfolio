@@ -14,8 +14,8 @@ export const myTheme = {
         })}`,
         
         h3Title: `${fontSize({
-            Fmax: 36,
-            Fmin: 26
+            Fmax: 38,
+            Fmin: 30
         })}`,
         
         sectionDescription: `${fontSize({

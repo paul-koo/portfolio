@@ -34,6 +34,7 @@ const StyledMain = styled.section`
     padding: 0 30px;
     gap: calc(100%/20);
     flex-wrap: wrap;
+    border-radius: 0 0 2em 2em;
 
     @media ${myTheme.media.mobile} {
         padding: 0 10px;
@@ -45,7 +46,7 @@ const DescriptionWrapperStyled = styled.div`
     justify-content: center;
     gap: 20px;
     width: 500px;
-    padding: 20px 0;
+    padding: 30px 0;
     flex-grow: 1;
 `
 

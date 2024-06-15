@@ -2,9 +2,9 @@ import styled from "styled-components";
 import {css} from "styled-components";
 import { myTheme } from "../../../../styles/Theme.styled";
 
-export function BurgerButton() {
+export function BurgerButton(props: {menuIsOpen: boolean, onClick: Function}) {
     return (
-        <BurgerButtonWrapper isOpen={true}>
+        <BurgerButtonWrapper isOpen={props.menuIsOpen}>
             <span></span>
         </BurgerButtonWrapper>
     )

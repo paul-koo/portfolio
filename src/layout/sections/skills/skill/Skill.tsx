@@ -35,6 +35,7 @@ const SkillWrapperStyled = styled.div`
     padding: 15px;
     background-color: ${myTheme.color.bgColor.secondary};
     text-align: center;
+    border-radius: 2em 2em 2em 2em;
 
     @media screen and (max-width: 650px) {
         aspect-ratio: 2/1

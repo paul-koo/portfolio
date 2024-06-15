@@ -6,6 +6,6 @@ export const H3TitleStyled = styled.h3`
     font-size: ${myTheme.fontSize.h3Title};
     font-weight: ${myTheme.fontWeight.bold};
     color: ${myTheme.color.font.main};
-    line-height: 1.2;
+    line-height: 1.2; 
     text-align: center;
 ` 
